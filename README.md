@@ -10,7 +10,7 @@
 ### 👤 User Roles
 - **Admin**: Posts job listings, manages system data.
 - **Job Seekers**: Can register, update profiles, view jobs, and apply.
-- **Customers** *(optional)*: Can browse and book available workers.
+- **Customers** : Can browse and book available workers.
 
 ### ✅ Functional Highlights
 - Session-based login and authentication
