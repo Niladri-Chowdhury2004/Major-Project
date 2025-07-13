@@ -76,6 +76,7 @@
   - Job listings
   - Booking information
   - Worker profiles
+  - Security Guard Profiles
 
 ---
 
