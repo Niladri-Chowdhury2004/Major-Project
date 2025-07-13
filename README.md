@@ -1,23 +1,25 @@
 # Major-Project  
 # 👷 JobConnect — A Job Portal for Uneducated and Unemployed Individuals
 
-**JobConnect** is a full-stack web application built to bridge the gap between employers and unskilled or semi-skilled workers such as security guards, laborers, and domestic help. It aims to provide a simple and user-friendly platform where employers can post jobs and job seekers can apply without needing to upload resumes or have strong digital literacy.
+**JobConnect** is a full-stack web application built to bridge the gap between employers and unskilled or semi-skilled workers such as security guards, laborers, and domestic help. It provides a simple and user-friendly platform where an admin can post jobs, and job seekers can search and apply without needing to upload resumes or have strong digital literacy.
 
 ---
 
 ## 📌 Key Features
 
-### 👥 User Roles
-- **Job Seekers**: Can register, update profiles, search for jobs, and apply.
-- **Employers**: Can register, post job openings, and manage listings.
+### 👤 User Roles
+- **Admin**: Posts job listings, manages system data.
+- **Job Seekers**: Can register, update profiles, view jobs, and apply.
+- **Customers** *(optional)*: Can browse and book available workers.
 
 ### ✅ Functional Highlights
-- User registration and secure login
-- Job posting by employers (e.g., Security Guard, Labourer)
-- Job search based on role, location, and skill
-- Profile creation and management for workers
-- Apply to jobs without uploading resumes
-- Backend validation and secure authentication (JWT)
+- Session-based login and authentication
+- Job posting by admin (e.g., Security Guard, Labourer)
+- Job search by role, location, or skill
+- Interactive map to view job locations
+- Profile creation and updates for job seekers
+- Apply to jobs directly without resumes
+- Secure backend validation
 
 ---
 
@@ -25,35 +27,36 @@
 
 | Layer         | Technology                     | Purpose                                           |
 |---------------|-------------------------------|---------------------------------------------------|
-| Frontend      | React.js, JavaScript, MUI      | UI development, responsive and user-friendly design |
-| Backend       | Spring Boot (Java)             | API creation, business logic, and backend security |
-| Database      | MySQL                          | Stores user data, job listings, and profiles       |
-| Styling       | CSS                            | UI layout and styling                             |
-| Tools         | VS Code, Postman               | Development and API testing                       |
+| Frontend      | React.js, JavaScript, MUI      | UI development, responsive design                 |
+| Backend       | Spring Boot (Java)             | API creation, business logic, and session handling|
+| Database      | MySQL                          | Stores users, jobs, profiles, bookings            |
+| Styling       | CSS                            | UI layout and responsiveness                      |
+| Tools         | VS Code, Postman               | Development and testing                           |
+| Maps          | Google Maps API / OpenStreetMap (if used) | Display job vacancies on map         |
 
 ---
 
 ## 🧪 Functional Requirements
 
-- User Registration & Login
-- Account creation for job seekers and employers
-- Secure backend validation and token-based login
-- Employers can:
-  - Post job openings
+- User Registration & Login (session-based)
+- Admin can:
+  - Post new job openings
+  - Manage job listings
 - Job Seekers can:
-  - Search for jobs by role/location/skill
-  - Apply to jobs directly
-  - Create/update profiles with skill info
+  - Search jobs by location/role
+  - View job availability on a map
+  - Apply for jobs directly
+  - Create and update personal profile
 
 ---
 
 ## ⚙️ Non-Functional Requirements
 
-- **Responsive Design**: Fully functional on desktop and mobile.
-- **Performance**: Fast loading and optimized backend calls.
-- **Security**: Token-based authentication using JWT and HTTPS.
-- **Scalability**: Architecture allows future upgrades like a mobile app or multi-language support.
-- **Usability**: Designed for users with limited digital literacy.
+- **Responsive Design**: Mobile and desktop friendly
+- **Performance**: Fast page loads and efficient data calls
+- **Security**: Session-based authentication and role-based access
+- **Usability**: Easy-to-use interface for users with low digital literacy
+
 
 ---
 
@@ -61,13 +64,26 @@
 
 ### 🖥️ Client-side (Frontend)
 - Built with React.js and Material UI
-- Communicates with backend via REST APIs
+- Communicates with backend through REST APIs
 
 ### 🖧 Server-side (Backend)
-- Spring Boot handles logic, data access, authentication, and API endpoints
+- Built using Spring Boot
+- Manages business logic, session-based login, and role-based access
 
 ### 🗄️ Database
-- MySQL stores worker profiles, job postings, employer data, and applications
+- MySQL for storing:
+  - User and admin data
+  - Job listings
+  - Booking information
+  - Worker profiles
+
+---
+
+## 🗺️ Job Location Map Feature
+
+- An interactive **map interface** shows where job openings are available.
+- Helps job seekers **visually find nearby vacancies**.
+- Filters by location or role can be applied.
 
 ---
 
