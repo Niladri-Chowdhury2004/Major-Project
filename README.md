@@ -32,7 +32,7 @@
 | Database      | MySQL                          | Stores users, jobs, profiles, bookings            |
 | Styling       | CSS                            | UI layout and responsiveness                      |
 | Tools         | VS Code, Postman               | Development and testing                           |
-| Maps          | Google Maps API / OpenStreetMap (if used) | Display job vacancies on map         |
+| Maps          | Google Maps API / OpenStreetMap  | Display job vacancies on map         |
 
 ---
 
@@ -99,6 +99,6 @@
 
 ```bash
 git clone https://github.com/Niladri-Chowdhury2004/Major-Project.git
-cd Major-Project/frontend
+cd "React Project/test"
 npm install
 npm start
